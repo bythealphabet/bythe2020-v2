@@ -1,0 +1,33 @@
+/*------------------------
+
+		FORM
+
+------------------------*/
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-box {
+	display: flex;
+	flex-direction: column;
+}
+.input {
+	font-family: inherit;
+	text-align: inherit;
+	margin-bottom: 1em;
+	padding: .5em;
+	border: solid 1px #404040;
+	transform: scale(1);
+	transition: transform 0.25s ease;
+}
+
+.input:focus {
+	transform: scale(1.03);
+}
+
+.label {
+	font-size: 1.2rem;
+	font-weight: 700;
+}

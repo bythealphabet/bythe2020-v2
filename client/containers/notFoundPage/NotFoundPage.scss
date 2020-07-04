@@ -1,0 +1,25 @@
+.main-notfoundpage{
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	text-align: center;
+
+	p span{
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-transform: capitalize;
+	};
+
+	.not-found-btns{
+		margin-top: 2em;
+
+		button{
+			border-radius: 10%;
+			color: #000;
+			background: #fff;
+		}
+	}
+}
