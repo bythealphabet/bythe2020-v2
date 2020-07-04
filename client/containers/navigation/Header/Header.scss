@@ -3,13 +3,14 @@
 }
 
 .header-logo-box {
-	padding: 1em;
-	grid-column: 1 / span 4;
+	display: flex;
+	
+	grid-column: 2 / span 4;
 	grid-row: 1;
 }
 
 .header-logo-box img {
-	width: 150px;
+	width: 100%;
 }
 
 .header-nav {
@@ -24,7 +25,7 @@
 	left: 0;
 	transition: transform 0.12s ease-in-out;
 	font-size: 1.3rem;
-	font-weight: 700;
+	font-weight: 400;
 	text-transform: capitalize;
 
 	letter-spacing: 2px;
@@ -62,7 +63,7 @@
 	}
 
 	.header-logo-box img{
-		width: 250px;
+		width: 70%;
 	}
 
 	.header-nav {
@@ -71,6 +72,7 @@
 		transform: translateY(0);
 		border: none;
 		font-size: 0.8rem;
+		font-weight: 700;
 		text-transform: lowercase;
 		display: flex;
 		align-items: center;
@@ -131,10 +133,11 @@
 
 	.header-nav li:nth-child(2) {
 		border: solid 0.5px;
-		background: #ee3b33;
+		background: #33EEBB;
 		padding: 0.5em 1.2em;
 		color: white;
 		transition: 0.5s ease;
+		font-weight: bold;
 	}
 
 	.header-nav li:nth-child(2) .nav-link {

@@ -1,36 +1,28 @@
 import React from "react";
 import s from "./Home.scss";
-import g from "./HomeGrid.scss";
-
 import useStyles from "isomorphic-style-loader/useStyles";
-
 import { Helmet } from "react-helmet";
-
-import HomeHeader from "./HomeHeader/HomeHeader";
-import HomeVertisol from "./HomeVertisol/HomeVertisol";
-import HomeSolarGard from "./HomeSolarGard/HomeSolarGard";
-import HomeRollerShutter from "./HomeRollerShutter/HomeRollerShutter";
-import HomeContactForm from "./HomeContactForm/HomeContactForm";
-import Footer from "../../navigation/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Home = (props) => {
 	useStyles(s);
-	useStyles(g);
 	return (
 		<>
+			<h1 className="main-heading home-heading">
+				<span className="main-heading">
+					<strong>Bythe2020</strong>{" "}
+				</span>
+				<span className="sub-heading">
+					Boiler plate web application made with{" "}
+					<strong>MERN STACK</strong> using webpack and babel.{" "}
+				</span>
+			</h1>
+			<Link to="/about" href className="btn btn-info">
+				More Info
+			</Link>
 			<Helmet>
-				<title>vertisol & solarGard Home</title>
-				<meta
-					property="og:title"
-					content="Home of Blinds and Awnings"
-				/>
+				<title>Bythe2020</title>
 			</Helmet>
-			<HomeHeader />
-			<HomeVertisol />
-			<HomeSolarGard />
-			<HomeRollerShutter />
-			<HomeContactForm />
-			<Footer />
 		</>
 	);
 };

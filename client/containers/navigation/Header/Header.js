@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import s from "./Header.scss";
 import useStyles from "isomorphic-style-loader/useStyles";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../../assets/img/logo.png";
+import logo from "../../../assets/img/logo.svg";
 
 const Header = (props) => {
 	const [active, setActive] = useState(false);
@@ -17,7 +17,7 @@ const Header = (props) => {
 
 	const navList = [
 		{ to: "/", page: "Home" },
-		{ to: "/products", page: "products" },
+		{ to: "/projects", page: "projects" },
 		{ to: "/contact", page: "Contact Us" },
 		{ to: "/about", page: "About Us" },
 	];

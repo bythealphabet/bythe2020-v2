@@ -1,5 +1,4 @@
 export default (markup, css, helmet) => {
-  const {title, meta} = helmet
   return `<!DOCTYPE html>
 <html>
   <head>
@@ -8,13 +7,11 @@ export default (markup, css, helmet) => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- SEO -->
-
-   
     <meta name="author" content="bythealphabet.com" />
-   
-    ${String(title)}
-    ${String(meta)}
-    
+   <link rel="icon" 
+      type="image/png" 
+      href="https://bythe-market.s3.amazonaws.com/default-logo.svg">
+     ${helmet.title ? helmet.title.toString() : ""} 
   </head>
   <body>
     <div id="root">${markup}</div>

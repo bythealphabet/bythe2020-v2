@@ -25,7 +25,7 @@ export default (req, res) => {
 	const helmet = Helmet.renderStatic()
 
 	if (context.notFound) {
-		res.status(404).send(template(markup, css));
+		res.status(404).send(template(markup, css, helmet));
 		return;
 	}
 

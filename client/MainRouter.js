@@ -11,8 +11,11 @@ import About from "./containers/core/About/About";
 // -----------NAVIGATION
 import Header from "./containers/navigation/Header/Header";
 
+//----------PROJECTS
+import Projects from "./containers/projects/Projects"
+
 // -----------Not Found Page
-import NotFoundPage from "./containers/notFoundPage/NotFoundPage"
+import NotFoundPage from "./containers/notFoundPage/NotFoundPage";
 
 export const routesArray = [
 	{
@@ -27,6 +30,10 @@ export const routesArray = [
 	{
 		path: "/contact",
 		component: Contact,
+	},
+	{
+		path: "/projects",
+		component: Projects,
 	},
 
 	{
@@ -45,8 +52,11 @@ export const MainRouter = (props) => {
 
 	return (
 		<>
+			
 			<Header />
-			{props.children}
+			<main className={`main-horizontal main-vertical  `}>
+				{props.children}
+			</main>
 		</>
 	);
 };
