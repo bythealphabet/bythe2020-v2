@@ -4,6 +4,7 @@ import useStyles from "isomorphic-style-loader/useStyles";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
+
 const Home = (props) => {
 	useStyles(s);
 	return (
@@ -20,6 +21,7 @@ const Home = (props) => {
 			<Link to="/about" href className="btn btn-info">
 				More Info
 			</Link>
+
 			<Helmet>
 				<title>Bythe2020</title>
 			</Helmet>
